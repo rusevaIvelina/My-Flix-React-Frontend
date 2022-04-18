@@ -1,0 +1,52 @@
+.CardContainerDes {
+  height: 100vh;
+  width: 100%;
+  background-color: #56baed;
+  padding-top: 100px;
+}
+.card {
+  max-width: 60%;
+  min-height: fit-content;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #56baed;
+  margin: auto;
+  box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+}
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.card-content {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.card-btn {
+  all: unset;
+  display: block;
+  margin-left: auto;
+  border: 2px solid #56baed;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.card-btn:hover {
+  color: #56baed;
+  background: #fff;
+}
+.card:nth-child(2) .card-btn:hover {
+  color: #56baed;
+  background: #fff;
+}
+.card:last-child .card-btn:hover {
+  color: #56baed;
+  background: #fff;
+}
