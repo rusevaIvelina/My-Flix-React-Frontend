@@ -178,14 +178,6 @@ export class ProfileView extends React.Component {
               value={this.state.username}
               onChange={(e) => this.setUsername(e.target.value)}
             />
-            {/* <input
-              type="text"
-              id="password"
-              className="fadeIn third loginInput"
-              name="login"
-              placeholder="Password"
-              onChange={(e) => this.setPassword(e.target.value)}
-            /> */}
             <input
               id="password"
               className="fadeIn third loginInput"
@@ -226,7 +218,7 @@ export class ProfileView extends React.Component {
         </div>
         <div id="formContent">
           <h2 className="active">
-            <p>Favorite Movies</p>
+            <p>  Favorite Movies/Remove</p>
           </h2>
           <div className="fadeIn first"></div>
           <form className="StyleAdjustment">
