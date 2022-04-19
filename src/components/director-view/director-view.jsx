@@ -9,8 +9,7 @@ export class DirectorView extends React.Component {
       <div className="CardContainerDes">
         <div className="card">
           <h3 className="card-title">Director : {director.Name}</h3>
-          <p className="card-content">Description : {director.Bio}</p>
-          <button className="card-btn">READ MORE</button>
+          <p className="card-content">{director.Bio}</p>
         </div>
       </div>
     );

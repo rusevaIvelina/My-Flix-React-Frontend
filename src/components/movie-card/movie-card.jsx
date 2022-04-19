@@ -48,7 +48,7 @@ export class MovieCard extends React.Component {
   render() {
     const { movie, isFavourite, addFavorite } = this.props;
     var favouriteButton;
-    if (isFavourite == true) {
+    if (isFavourite === true) {
       favouriteButton = <i className="material-icons selectedFav">favorite</i>;
     } else {
       favouriteButton = (
@@ -107,8 +107,6 @@ MovieCard.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
-    // Director: PropTypes.object,
-    // Genre: PropTypes.object,
     ImagePath: PropTypes.string.isRequired,
   }).isRequired,
   Featured: PropTypes.bool,
