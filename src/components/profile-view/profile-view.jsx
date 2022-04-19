@@ -149,7 +149,7 @@ export class ProfileView extends React.Component {
       .then((response) => {
         alert("Favorite was removed");
         var FavouriteData = JSON.parse(localStorage.getItem("favouriteMovies"));
-        FavouriteData = FavouriteData.filter((x) => x != _id);
+        FavouriteData = FavouriteData.filter((x) => x !== _id);
         localStorage.setItem("favouriteMovies", JSON.stringify(FavouriteData));
         window.location.reload();
       })
