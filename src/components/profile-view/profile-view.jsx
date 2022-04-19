@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-//import { Link } from "react-router-dom";
 import "./profile-view.scss";
 
 export class ProfileView extends React.Component {
