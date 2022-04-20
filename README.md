@@ -1,10 +1,10 @@
 # MyFlix-React-Frontend
 
-# Purpose
+## Purpose
 
 This is the client-side for myFlix application based on its existing server-side code (REST API and database)
 
-# Technologies used
+## Technologies used
 
 • React
 
@@ -13,7 +13,7 @@ This is the client-side for myFlix application based on its existing server-side
 • Bootstrap
 
 
-# Components
+## Components
 
 • Main view
 
