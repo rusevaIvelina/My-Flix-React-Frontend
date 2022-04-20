@@ -1,4 +1,4 @@
-# myFlix-client
+# MyFlix-React-Frontend
 
 # Purpose
 
@@ -11,8 +11,6 @@ This is the client-side for myFlix application based on its existing server-side
 • React Redux
 
 • Bootstrap
-
-• Parcel
 
 
 # Components
