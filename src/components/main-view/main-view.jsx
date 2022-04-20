@@ -20,7 +20,7 @@ import { ProfileView } from "../profile-view/profile-view";
 import { NavbarCustom } from "../navbar/navbar";
 import MoviesList from "../movies-list/movies-list";
 
-const API_ADDRESS = "https://myflix-movietime.herokuapp.com/";
+const API_ADDRESS = "https://myflix-movietime.herokuapp.com";
 
 // Styles
 

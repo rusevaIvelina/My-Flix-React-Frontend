@@ -34,7 +34,7 @@ function MoviesList(props) {
           var favouriteData = JSON.parse(
             localStorage.getItem("favouriteMovies")
           );
-          var checkIfFavourite = favouriteData.filter((x) => x == m._id);
+          var checkIfFavourite = favouriteData.filter((x) => x === m._id);
           checkIfFavourite = checkIfFavourite.length > 0 ? true : false;
           console.log("Check Variable : ", checkIfFavourite);
           return (
