@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import { setMovies } from "../../actions/actions";
-import { setUser } from "../../actions/actions";
 // Components
 import { LoginView } from "../login-view/login-view";
 import { RegisterView } from "../register-view/register-view";
