@@ -36874,7 +36874,7 @@ function LoginView(props) {
     const [password, setPassword] = _react.useState("");
     const handleSubmit = (e)=>{
         e.preventDefault();
-        _axiosDefault.default.post("http://localhost:8080/login", {
+        _axiosDefault.default.post("http://localhost:8080login", {
             Username: username,
             Password: password
         }).then((response)=>{
@@ -37167,7 +37167,7 @@ function RegisterView(props) {
     const [birthday, setBirthday] = _react.useState("");
     const handleSubmit = (e)=>{
         e.preventDefault();
-        _axiosDefault.default.post("http://localhost:8080/users", {
+        _axiosDefault.default.post("http://localhost:8080users", {
             Username: username,
             Password: password,
             Email: email,
@@ -37520,7 +37520,7 @@ class ProfileView extends _reactDefault.default.Component {
     }
     getUser(token) {
         const username = localStorage.getItem("user");
-        _axiosDefault.default.get(`http://localhost:8080/users/${username}`, {
+        _axiosDefault.default.get(`http://localhost:8080users/${username}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -37552,7 +37552,7 @@ class ProfileView extends _reactDefault.default.Component {
         // if (_this.state.password.length < 8) {
         //   alert("Password Must Be 8 Character Long");
         // }
-        _axiosDefault.default.put(`http://localhost:8080/users/${username}`, {
+        _axiosDefault.default.put(`http://localhost:8080users/${username}`, {
             Username: _this.state.username,
             Password: localStorage.getItem("password"),
             Email: _this.state.email,
@@ -37607,7 +37607,7 @@ class ProfileView extends _reactDefault.default.Component {
         if (answer) {
             const token = localStorage.getItem("token");
             const { username  } = this.state;
-            _axiosDefault.default.delete(`http://localhost:8080/users/${username}`, {
+            _axiosDefault.default.delete(`http://localhost:8080users/${username}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -37625,7 +37625,7 @@ class ProfileView extends _reactDefault.default.Component {
         const { username  } = this.state;
         const token = localStorage.getItem("token");
         console.log(_id, "_id");
-        _axiosDefault.default.delete(`http://localhost:8080/users/${username}/movies/${_id}`, {
+        _axiosDefault.default.delete(`http://localhost:8080users/${username}/movies/${_id}`, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -38055,7 +38055,7 @@ class MovieCard extends _reactDefault.default.Component {
     addFavorite(_id) {
         const token = localStorage.getItem("token");
         const username = localStorage.getItem("user");
-        _axiosDefault.default.post(`http://localhost:8080/users/${username}/movies/${_id}`, {}, {
+        _axiosDefault.default.post(`http://localhost:8080users/${username}/movies/${_id}`, {}, {
             headers: {
                 Authorization: `Bearer ${token}`
             }

@@ -28,7 +28,7 @@ export class MovieCard extends React.Component {
 
     axios
       .post(
-        `https://myflix-movietime.herokuapp.com/users/${username}/movies/${_id}`,
+        `http://localhost:8080/users/${username}/movies/${_id}`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` },
